@@ -46,3 +46,43 @@
     width: 19vw;
     background-color: darkblue;
 }
+
+
+
+
+/* ESTILIZACAO ADICIONAL */
+.vitoria {
+    padding: 5px 20px;
+    font-family: 'Yaldevi', sans-serif;
+    color: green;
+    margin-bottom: -30px;
+}
+.tittle {
+    font-size: 26px;
+    text-align: center;
+    margin: 15px 0;
+}
+.visivel {
+    visibility: hidden;
+}
+
+
+/* PARA DESKTOP */
+@media only screen and (min-width: 900px) {
+    .torre {
+        height: 30vh;
+    }
+    .disco {
+        height: 4vh;
+        top: 30vh;
+
+    }
+    .tittle {
+        font-size: 64px;
+    }
+    .vitoria {
+        margin-top: 40px;
+        font-size: 24px;
+        text-align: center;
+    }
+}    
