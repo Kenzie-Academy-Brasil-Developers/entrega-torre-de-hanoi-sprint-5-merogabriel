@@ -1,0 +1,48 @@
+
+.todasTorres{
+    display: flex;
+    justify-content: space-around;
+}
+
+.torre {
+    display: flex; 
+    flex-direction: column-reverse; 
+    align-items: center;
+    width: 2vw;
+    height: 15vh;
+    background-color: black;
+}
+
+.todosDiscos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.disco {
+    height: 2vh;
+    border: solid 0.5px black;
+    position: relative;
+    right: 33vw;
+    top: 15vh;
+}
+
+.disco-1 {
+    width: 7vw;
+    background-color: brown;
+}
+
+.disco-2 {
+    width: 11vw;
+    background-color: chartreuse;
+}
+
+.disco-3 {
+    width: 15vw;
+    background-color: crimson;
+}
+
+.disco-4 {
+    width: 19vw;
+    background-color: darkblue;
+}
