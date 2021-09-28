@@ -3,6 +3,7 @@ const t2 = document.getElementById('t2')
 const t3 = document.getElementById('t3')
 let discoAtual = undefined
 let modo = 'modo torre'
+let counter = 0
 
 t1.addEventListener("click", function () {
     if (modo === 'modo torre') {
@@ -10,7 +11,9 @@ t1.addEventListener("click", function () {
         console.log(modo)
         modo = 'modo disco'
     } else if (modo === 'modo disco') {
-        t1.appendChild(discoAtual)
+        // if () {
+        //     t1.appendChild(discoAtual)
+        // }
         discoAtual = undefined
         console.log(modo)
         modo = 'modo torre'
