@@ -18,9 +18,11 @@ let counter = 0
 t1.addEventListener("click", function () {
     if (modo === 'modo torre') {
         discoAtual = t1.lastElementChild
+        t1.lastElementChild.setAttribute('class', 'selected')
         console.log(modo)
         modo = 'modo disco'
     } else if (modo === 'modo disco') {
+        toClassDisco()
         if (t1.lastElementChild === null) {
             t1.appendChild(discoAtual)
             counter += 1
@@ -37,9 +39,11 @@ t1.addEventListener("click", function () {
 t2.addEventListener("click", function () {
     if (modo === 'modo torre') {
         discoAtual = t2.lastElementChild
+        t2.lastElementChild.setAttribute('class', 'selected')
         console.log(modo)
         modo = 'modo disco'
     } else if (modo === 'modo disco') {
+        toClassDisco()
         if (t2.lastElementChild === null) {
             t2.appendChild(discoAtual)
             counter += 1
@@ -56,9 +60,11 @@ t2.addEventListener("click", function () {
 t3.addEventListener("click", function () {
     if (modo === 'modo torre') {
         discoAtual = t3.lastElementChild
+        t3.lastElementChild.setAttribute('class', 'selected')
         console.log(modo)
         modo = 'modo disco'
     } else if (modo === 'modo disco') {
+        toClassDisco()
         if (t3.lastElementChild === null) {
             t3.appendChild(discoAtual)
             counter += 1
@@ -74,3 +80,16 @@ t3.addEventListener("click", function () {
         win.classList.remove("visivel")
     }
 })
+
+function toClassDisco() {
+    if (t1.lastElementChild !== null) {
+        t1.lastElementChild.setAttribute('class', 'disco')
+    }
+    if (t2.lastElementChild !== null) {
+        t2.lastElementChild.setAttribute('class', 'disco')
+    }
+        
+    if (t3.lastElementChild !== null) {
+        t3.lastElementChild.setAttribute('class', 'disco')
+    }
+}
