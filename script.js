@@ -11,9 +11,13 @@ t1.addEventListener("click", function () {
         console.log(modo)
         modo = 'modo disco'
     } else if (modo === 'modo disco') {
-        // if () {
-        //     t1.appendChild(discoAtual)
-        // }
+        if (t1.lastElementChild === null) {
+            t1.appendChild(discoAtual)
+            counter += 1
+        } else if (discoAtual.clientWidth < t1.lastElementChild.clientWidth) {
+            t1.appendChild(discoAtual)
+            counter += 1
+        }
         discoAtual = undefined
         console.log(modo)
         modo = 'modo torre'
@@ -26,7 +30,13 @@ t2.addEventListener("click", function () {
         console.log(modo)
         modo = 'modo disco'
     } else if (modo === 'modo disco') {
-        t2.appendChild(discoAtual)
+        if (t2.lastElementChild === null) {
+            t2.appendChild(discoAtual)
+            counter += 1
+        } else if (discoAtual.clientWidth < t2.lastElementChild.clientWidth) {
+            t2.appendChild(discoAtual)
+            counter += 1
+        }
         discoAtual = undefined
         console.log(modo)
         modo = 'modo torre'
@@ -39,7 +49,13 @@ t3.addEventListener("click", function () {
         console.log(modo)
         modo = 'modo disco'
     } else if (modo === 'modo disco') {
-        t3.appendChild(discoAtual)
+        if (t3.lastElementChild === null) {
+            t3.appendChild(discoAtual)
+            counter += 1
+        } else if (discoAtual.clientWidth < t3.lastElementChild.clientWidth) {
+            t3.appendChild(discoAtual)
+            counter += 1
+        }
         discoAtual = undefined
         console.log(modo)
         modo = 'modo torre'
