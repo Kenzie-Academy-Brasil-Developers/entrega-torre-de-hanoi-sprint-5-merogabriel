@@ -1,7 +1,12 @@
+html {
+    background-color: #ccc;
+}
 
-.todasTorres{
+#todasTorres {
     display: flex;
     justify-content: space-around;
+    position: relative;
+    margin-top: 5vh;
 }
 
 .torre {
@@ -10,41 +15,36 @@
     align-items: center;
     width: 2vw;
     height: 15vh;
-    background-color: black;
-}
-
-.todosDiscos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: grey;
+    border: black 1px solid;
+    position: relative;
 }
 
 .disco {
     height: 2vh;
-    border: solid 0.5px black;
-    position: relative;
+    border: solid 1px navy;
     right: 33vw;
     top: 15vh;
 }
 
 .disco-1 {
-    width: 7vw;
-    background-color: brown;
+    width: 19vw;
+    background-color: #B10DC9;
 }
 
 .disco-2 {
-    width: 11vw;
-    background-color: chartreuse;
+    width: 15vw;
+    background-color: #F012BE;
 }
 
 .disco-3 {
-    width: 15vw;
-    background-color: crimson;
+    width: 11vw;
+    background-color: #85144b;
 }
 
 .disco-4 {
-    width: 19vw;
-    background-color: darkblue;
+    width: 7vw;
+    background-color: #FF4136;
 }
 
 
