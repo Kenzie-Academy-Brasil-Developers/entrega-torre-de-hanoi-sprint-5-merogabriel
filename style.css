@@ -50,7 +50,7 @@ html {
     padding: 5px 20px;
     font-family: 'Yaldevi', sans-serif;
     color: green;
-    margin-bottom: -30px;
+    margin-bottom: 50px;
 }
 .title {
     font-size: 26px;
@@ -60,7 +60,13 @@ html {
 .visivel {
     visibility: hidden;
 }
-
+.contador {
+    font-size: 16px;
+    margin: 5px;
+    position: absolute;
+    top: 100px;
+    right: 10px;
+}
 
 /* PARA DESKTOP */
 @media only screen and (min-width: 900px) {
@@ -79,5 +85,11 @@ html {
         margin-top: 40px;
         font-size: 24px;
         text-align: center;
+    }
+    .contador {
+        font-size: 20px;
+        margin: 0;
+        top: 13%;
+        right: 5%;
     }
 }    
