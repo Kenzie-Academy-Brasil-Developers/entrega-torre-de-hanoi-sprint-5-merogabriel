@@ -27,22 +27,31 @@ html {
     top: 15vh;
 }
 
-.disco-1 {
+.selected {
+    height: 2vh;
+    right: 33vw;
+    top: 15vh;
+    background-color: greenyellow;
+    border: dashed 1px violet
+}
+
+
+#disco1 {
     width: 19vw;
     background-color: #B10DC9;
 }
 
-.disco-2 {
+#disco2 {
     width: 15vw;
     background-color: #F012BE;
 }
 
-.disco-3 {
+#disco3 {
     width: 11vw;
     background-color: #85144b;
 }
 
-.disco-4 {
+#disco4 {
     width: 7vw;
     background-color: #FF4136;
 }
