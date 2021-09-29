@@ -11,21 +11,22 @@
 </head>
 <body>
     <main>
-        <h1>Torre Hanoi</h1>
-        <section class="todosDiscos">
-            <div class="disco disco-1"></div>
-            <div class="disco disco-2"></div>
-            <div class="disco disco-3"></div>
-            <div class="disco disco-4"></div>
-        </section>
-
-        <section class="todasTorres">
-            <div class="torre torre-1"></div>
-            <div class="torre torre-2"></div>
-            <div class="torre torre-3"></div>
+        <h1 class="title">Torre Hanoi</h1>
+        <div class="win" id="win"></div>
+        <div id="counter"></div>
+        <section id="todasTorres">
+            <div id="t1" class="torre">
+                <div class="disco" id="disco1"></div>
+                <div class="disco" id="disco2"></div>
+                <div class="disco" id="disco3"></div>
+                <div class="disco" id="disco4"></div>
+            </div>
+            <div id="t2" class="torre"></div>
+            <div id="t3" class="torre">
+            </div>
         </section>
     </main>
-    
+    <script src="./script.js"></script>
     
 </body>
 </html>
