@@ -1,6 +1,6 @@
-const primeiraTorre = document.getElementById("torre1")
-const segundaTorre = document.getElementById("torre2")
-const terceiraTorre = document.getElementById("torre3")
+const t1 = document.getElementById('t1')
+const t2 = document.getElementById('t2')
+const t3 = document.getElementById('t3')
 const primeiroDisco = document.getElementById("disco1")
 const segundoDisco = document.getElementById("disco2")
 const terceiroDisco = document.getElementById("disco3")
@@ -11,14 +11,6 @@ win.classList.add("vitoria", "visivel")
 win.innerHTML = "Parabens, voce conseguiu vencer o desafio da Torre de Hanoi!!"
 vitoria.appendChild(win)
 const discos = [primeiroDisco, segundoDisco, terceiroDisco, quartoDisco]
-
-if (terceiraTorre.childElementCount >= discos.length) {
-    win.classList.remove("visivel")
-}
-
-const t1 = document.getElementById('t1')
-const t2 = document.getElementById('t2')
-const t3 = document.getElementById('t3')
 let discoAtual = undefined
 let modo = 'modo torre'
 let counter = 0
@@ -78,5 +70,7 @@ t3.addEventListener("click", function () {
         console.log(modo)
         modo = 'modo torre'
     }
+    if (t3.childElementCount >= discos.length) {
+        win.classList.remove("visivel")
+    }
 })
-
