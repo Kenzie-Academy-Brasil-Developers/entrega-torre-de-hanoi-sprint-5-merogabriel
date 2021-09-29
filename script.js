@@ -23,7 +23,7 @@ divCounter.appendChild(msgCounter)
 t1.addEventListener("click", function () {
     if (modo === 'modo torre') {
         discoAtual = t1.lastElementChild
-        t1.lastElementChild.setAttribute('class', 'selected')
+        t1.lastElementChild.classList.add("selected")
         console.log(modo)
         modo = 'modo disco'
     } else if (modo === 'modo disco') {
@@ -49,7 +49,7 @@ t1.addEventListener("click", function () {
 t2.addEventListener("click", function () {
     if (modo === 'modo torre') {
         discoAtual = t2.lastElementChild
-        t2.lastElementChild.setAttribute('class', 'selected')
+        t2.lastElementChild.classList.add("selected")
         console.log(modo)
         modo = 'modo disco'
     } else if (modo === 'modo disco') {
@@ -75,7 +75,7 @@ t2.addEventListener("click", function () {
 t3.addEventListener("click", function () {
     if (modo === 'modo torre') {
         discoAtual = t3.lastElementChild
-        t3.lastElementChild.setAttribute('class', 'selected')
+        t3.lastElementChild.classList.add("selected")
         console.log(modo)
         modo = 'modo disco'
     } else if (modo === 'modo disco') {
@@ -102,17 +102,18 @@ t3.addEventListener("click", function () {
 
 })
 
-})
-
 function toClassDisco() {
     if (t1.lastElementChild !== null) {
-        t1.lastElementChild.setAttribute('class', 'disco')
+        t1.lastElementChild.classList.add("disco")
+        t1.lastElementChild.classList.remove("selected")
     }
     if (t2.lastElementChild !== null) {
-        t2.lastElementChild.setAttribute('class', 'disco')
+        t2.lastElementChild.classList.add("disco")
+        t2.lastElementChild.classList.remove("selected")
     }
         
     if (t3.lastElementChild !== null) {
-        t3.lastElementChild.setAttribute('class', 'disco')
+        t3.lastElementChild.classList.add("disco")
+        t3.lastElementChild.classList.remove("selected")
     }
 }

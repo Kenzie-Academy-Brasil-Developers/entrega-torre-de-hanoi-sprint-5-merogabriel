@@ -27,33 +27,35 @@ html {
     top: 15vh;
 }
 
-.selected {
-    height: 2vh;
-    right: 33vw;
-    top: 15vh;
-    background-color: greenyellow;
-    border: dashed 1px violet
+
+.disco1:hover, .disco2:hover, .disco3:hover, .disco4:hover, .torre:hover {
+    cursor: pointer;
 }
-
-
-#disco1 {
+.disco1 {
     width: 19vw;
     background-color: #B10DC9;
 }
 
-#disco2 {
+.disco2 {
     width: 15vw;
     background-color: #F012BE;
 }
 
-#disco3 {
+.disco3 {
     width: 11vw;
     background-color: #85144b;
 }
 
-#disco4 {
+.disco4 {
     width: 7vw;
     background-color: #FF4136;
+}
+.selected {
+    height: 2vh;
+    right: 33vw;
+    top: 15vh;
+    background-color: black;
+    border: dashed 1px violet
 }
 .vitoria {
     padding: 5px 20px;
@@ -100,5 +102,8 @@ html {
         margin: 0;
         top: 13%;
         right: 5%;
+    }
+    .selected {
+        height: 4vh;
     }
 }    
